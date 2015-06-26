@@ -9,12 +9,30 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //    after the API code downloads.
 var player;
 
-function onYouTubeIframeAPIReady() {
-    var results = searchByKeyword();
+function getYearData(){
+    var year = document.getElementById('year').value;
+    onYouTubeIframeAPIReady(year);
+}
+
+function getVideoList(year){
+    
+    httpGet('https://www.googleapis.com/youtube/v3/search?videoEmbeddable=true&publishedAfter=2009-01-01T00%3A00%3A00Z&order=viewCount&part=snippet&publishedBefore=2010-01-01T00%3A00%3A00Z&type=video&videoCategoryId=Music&maxResults=10&key={YOUR_API_KEY}')
+}
+
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false );
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+
+function onYouTubeIframeAPIReady(year) {
+//    var results = searchByKeyword(year);
     player = new YT.Player('player', {
         width: '1280',
         height: '720',
-        videoId: results[0].id.getTrustedUrl,
+        videoId: 'EeWgOo9SEo8',
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -43,9 +61,9 @@ function stopVideo() {
     player.stopVideo();
 }
 
-//GET https://www.googleapis.com/youtube/v3/search?videoEmbeddable=true&publishedAfter=2009-01-01T00%3A00%3A00Z&order=viewCount&part=snippet&publishedBefore=2010-01-01T00%3A00%3A00Z&type=video&videoCategoryId=Music&maxResults=10&key={YOUR_API_KEY}
+//GET 
 
-function searchByKeyword() {
+function searchByKeyword(year) {
     var results = YT.Search.list('id,snippet', {
         q: 'dogs',
         maxResults: 10

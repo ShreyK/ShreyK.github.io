@@ -5,10 +5,20 @@
 <title>Throwback Time</title>
 <meta name="description" content="Throwback to old Youtube songs/videos">
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+
 </html>
 
 <body>
-    <div id="player"></div>
+    <div id="container">
+        <h1>Throwback Time</h1>
+        <div id="form">
+            <input id="year" type="number" min="2000" max="2015" step="1" value="2015" name="Year">
+            <input id="submit" type="submit" value="Submit" onclick="getYearData();">
+        </div>
+        <div id="player"></div>
+    </div>
+
     <script src="js/throwback.js"></script>
 </body>
