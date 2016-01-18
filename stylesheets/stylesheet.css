@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+
 * {
     box-sizing: border-box;
+}
+
+html {
+    background:#fafafa url('res/white_wall_hash.png');
 }
 
 body {
@@ -139,11 +145,13 @@ a:hover {
 }
 
 .page-header {
-    color: #fff;
+    color: #000;
     margin: 0 0 15px !important;
     text-align: center;
+/*
     background-color: #159957;
     background-image: linear-gradient(120deg, #16222A, #3A6073);
+*/
 }
 
 #title {
@@ -474,4 +482,7 @@ a:hover {
 
 h1 {
     
+}
+.circular-image {
+  border-radius:  50%;
 }
