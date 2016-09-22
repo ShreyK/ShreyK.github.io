@@ -7,11 +7,11 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+    padding: 0;
 }
 
 .mdl-layout__title {
   font-size: 36px;
-  text-align: center;
   font-weight: 300;
 }
 
@@ -173,12 +173,10 @@ footer {
     font-size: 24px;
 }
 
-.bottom_align {
-   position: absolute;
-   bottom: 0;
-    padding: 14px;
-}
-
 .mdl-layout__content {
     background:  url(images/white_wall_hash.png)
+}
+
+.mdl-card__title-text {
+    
 }
