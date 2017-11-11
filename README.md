@@ -1,2 +1,4 @@
-# ShreyK.github.io
-Github IO Page
+# Website
+## ShreyK.github.io
+
+I am a 4th Year *Software Engineering* student currently studying at the *University of Waterloo*! I have been playing video games since I was a kid which brought me to pursue a higher education in a technological field! I've been working at *Microsoft* for my last 2 co-ops where I have been working on *Graphics, Computer Vision, and Mixed Reality* projects, and was previously developing for *Android* for a couple years at multiple startups. I have also dipped my toes in various other technologies: *Game Development, Web Development, and Human Computer Interaction research* to name a few, and have even helped in iterative design and prototyping processes throughout my internships. You can find more information about me through the links below.
