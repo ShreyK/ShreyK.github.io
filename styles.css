@@ -82,9 +82,14 @@
   left: 15%;
 }
 
-.portfolio-card .mdl-card__title {
+.portfolio-card {
   padding-bottom: 1;
-    background-color: gainsboro;
+  background-color: gainsboro;
+}
+
+.mdl-card__title {
+  padding-bottom: 1;
+  background-color: dimgray;
 }
 
 .portfolio-blog-card-full-bg {
@@ -178,5 +183,5 @@ footer {
 }
 
 .mdl-card__title-text {
-    
+  align-content: center;
 }
